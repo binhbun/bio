@@ -1,0 +1,14 @@
+<script>
+const links = [
+    "https://otieu.com/4/10188428",
+    "https://www.effectivegatecpm.com/jp56dzu0?key=027f54a593f46cae37b5d0382b80b208"
+];
+
+let counter = parseInt(localStorage.getItem("rr_counter") || "0");
+counter++;
+localStorage.setItem("rr_counter", counter);
+
+const index = (counter - 1) % links.length;
+
+location.href = links[index];
+</script>
